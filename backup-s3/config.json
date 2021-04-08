@@ -1,6 +1,6 @@
 {
   "name": "Backup S3",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "slug": "backup_s3",
   "description": "Backup config to S3 bucket",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
