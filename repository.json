@@ -1,5 +1,5 @@
 {
   "name": "Backup-S3 Hass.io Add-On",
-  "url": "https://github.com/mikebell/hassio-backup-s3/tree/master/backup-s3  ",
+  "url": "https://github.com/mikebell/hassio-backup-s3",
   "maintainer": "mikebell <hello@mikebell.io>"
 }
