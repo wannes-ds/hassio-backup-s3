@@ -1,7 +1,7 @@
 #!/bin/sh
 
 KEY=$(jq -r .access_key /data/options.json)
-SECRET=$(jq -r .access_key /data/options.json)
+SECRET=$(jq -r .secret_key /data/options.json)
 ENDPOINT=$(jq -r .endpoint /data/options.json)
 BUCKET=$(jq -r .bucket_name /data/options.json)
 
