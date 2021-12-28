@@ -7,14 +7,16 @@
   "startup": "once",
   "boot": "auto",
   "options": {
-    "awskey": "",
-    "awssecret": "",
-    "bucketname": ""
+    "access_key": "",
+    "secret_key": "",
+    "endpoint": "",
+    "bucket_name": ""
   },
   "schema": {
-    "awskey": "str",
-    "awssecret": "str",
-    "bucketname": "str"
+    "access_key": "str",
+    "secret_key": "str",
+    "endpoint": "str",
+    "bucket_name": "str"
   },
   "map": ["backup:rw"]
 }
