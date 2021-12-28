@@ -7,10 +7,10 @@ BUCKET=$(jq -r .bucket_name /data/options.json)
 
 now="$(date +'%d/%m/%Y - %H:%M:%S')"
 
-echo "$now"
+echo "Starting sync to $BUCKET at $now"
 
 export MC_HOST_remote=https://$KEY:$SECRET@$ENDPOINT
 
-mc mirror /backup/ remote/"$BUCKET" --overwrite --remove
+mc mirror /backup/ remote/$BUCKET --overwrite --remove
 
 echo "Done"
