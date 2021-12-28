@@ -11,4 +11,6 @@ RUN microdnf update --nodocs && \
 COPY run.sh /
 RUN chmod a+x /run.sh
 
+ENTRYPOINT [ "/bin/sh" ]
+
 CMD [ "/run.sh" ]
