@@ -3,8 +3,9 @@ FROM minio/mc
 ENV LANG C.UTF-8
 
 # add aws-cli and deps
-RUN apk -v --update --no-cache add py-pip
-RUN apk add jq
+RUN microdnf update --nodocs && \
+        microdnf install jq --nodocs && \
+        microdnf clean all
 
 # Copy data for add-on
 COPY run.sh /
